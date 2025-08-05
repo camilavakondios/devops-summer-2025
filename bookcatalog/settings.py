@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'bookcatalog.wsgi.application'
 if DEVELOPMENT_MODE:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.bakends.sqlite3',
+            'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
