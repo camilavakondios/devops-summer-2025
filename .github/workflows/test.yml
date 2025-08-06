@@ -45,7 +45,7 @@ jobs:
 
           - uses: ./.github/actions/install-dependencies
 
-          - name: Run migrations
+          - name: Run makemigrations
             run: python manage.py makemigrations --check       
 
   build-docker-image:
