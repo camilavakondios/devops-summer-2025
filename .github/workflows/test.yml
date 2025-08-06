@@ -17,7 +17,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - uses: ./.github/actions/install-dependencies.yaml
+      - uses: ./.github/actions/install-dependencies
 
       - name: Run pytest
         run: pytest   
