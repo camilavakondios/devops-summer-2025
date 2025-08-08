@@ -13,8 +13,9 @@ class HealthView(APIView):
     def get(self, request, *args, **kwargs):
         return Response(
             {
-                "status":"200"
+                "status":"ok"
             } )
+        
         
  #instantiate the object in Django
 health_view = HealthView.as_view()
