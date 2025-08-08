@@ -15,9 +15,11 @@ class Migration(migrations.Migration):
             name='Book',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('isbn', models.CharField(max_length=17, unique=True, null=False)),
                 ('title', models.CharField(max_length=225)),
                 ('description', models.TextField(blank=True)),
                 ('author', models.CharField(max_length=255)),
+                ('published_date', models.DateField()),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
             ],
         ),

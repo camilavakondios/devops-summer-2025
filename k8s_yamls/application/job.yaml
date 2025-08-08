@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-      - image: ghcr.io/estebangarcia/devops-diploma-2025:main
+      - image: ghcr.io/camilavakondios/devops-summer-2025:main
         name: api
         command: ["python", "manage.py", "migrate"]
         env:
