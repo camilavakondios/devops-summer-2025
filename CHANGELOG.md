@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/camilavakondios/devops-summer-2025/compare/v1.0.0...v1.0.1) (2025-08-08)
+
+### Bug Fixes
+
+* docker images ([53d054f](https://github.com/camilavakondios/devops-summer-2025/commit/53d054f8b902a70c9e6e1345aa7be009e251e5bc))
+
 ## 1.0.0 (2025-08-08)
 
 ### Features
