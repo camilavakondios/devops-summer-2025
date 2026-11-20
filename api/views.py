@@ -16,6 +16,7 @@ class HealthView(APIView):
                 "status":"ok"
             } )
         
+        
  #instantiate the object in Django
 health_view = HealthView.as_view()
 
@@ -34,11 +35,30 @@ class BookView(APIView):
         serializer = BookSerializer(data=data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-
-        
         return Response (serializer.data)
     
+    #def delete(self, request, isbn)
     
+class BookDetailView(APIView):
+     
+    def get(self, request, isbn):
+        book = Book.objects.get(isbn=isbn)
+        serialiser = BookSerializer(book)
+        return Response(serialiser.data)
+    
+    def put(self, request, isbn):
+        book = Book.objects.get(isbn=isbn)
+        serialiser = BookSerializer(instance=book, data=request.data)
+        serialiser.is_valid(raise_exception=True)
+        serialiser.save()
+        return Response(serialiser.data)
+    
+    def delete(self, request, isbn):
+        book = Book.objects.get(isbn=isbn)
+        book.delete()
+        return Response({"Book has been delete"})
+     
     
      #instantiate the object in Django
 book_view = BookView.as_view()
+book_detail_view = BookDetailView.as_view()
