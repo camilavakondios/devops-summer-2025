@@ -1,8 +1,14 @@
+## Project Documentation
+
+The full project report, including implementation details, troubleshooting and learning outcomes, is available here:
+
+[View Project Report (PDF)](./CamilaPFaria_Book-Catalogue.pdf)
+
+
 # Book Catalogue 2025
 
-[working in progress....]
-
 The Book Catalogue API allows users to create, update, delete and retrieve books from a catalogue. It is an API created as part of the Diploma in DevOps course and it is also deployed using Docker images, Kubernetes, Helm Chart and ArgoCD.
+
 
 The API allows users to create a new book as showed below:
 
